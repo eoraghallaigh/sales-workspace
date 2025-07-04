@@ -16,6 +16,8 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  margin-top: 48px; /* Account for TopNav height */
+  margin-left: 64px; /* Account for SideNav width */
 }
 
 .app-main {
@@ -147,8 +149,12 @@ body {
     height: calc(100vh - 48px); /* Keep consistent TopNav height */
   }
   
-  .app-main {
+  .app-content {
     margin-left: 56px; /* Adjust for smaller SideNav on mobile */
+  }
+  
+  .app-main {
+    margin-left: 0; /* Remove margin since app-content now handles it */
   }
   
   .main-content {
