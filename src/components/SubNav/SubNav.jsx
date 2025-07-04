@@ -5,13 +5,18 @@ const SubNav = ({
   title = 'Navigation', 
   count, 
   navItems = [], 
-  defaultActiveItem 
+  defaultActiveItem,
+  onNavigationChange
 }) => {
   const [activeItem, setActiveItem] = useState(defaultActiveItem || (navItems.find(item => item.active)?.label) || '');
 
   const handleItemClick = (item) => {
     if (item.type !== 'section') {
       setActiveItem(item.label);
+      // Call the callback if provided
+      if (onNavigationChange) {
+        onNavigationChange(item.label);
+      }
     }
   };
 
