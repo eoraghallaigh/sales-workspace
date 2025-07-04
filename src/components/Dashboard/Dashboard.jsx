@@ -13,6 +13,25 @@ const Dashboard = () => {
         <div className="dashboard-header">
           <h1 className="dashboard-title">Dashboard</h1>
           <p className="dashboard-subtitle">Overview of your sales performance</p>
+          
+          {/* Tailwind CSS Test Section */}
+          <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+            <div className="flex items-center space-x-2 mb-2">
+              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                ✅ Tailwind CSS Configured
+              </span>
+              <span className="tw-btn tw-btn-primary">
+                Custom Design System
+              </span>
+            </div>
+            <p className="text-sm text-gray-600">
+              You can now use <code className="px-1 py-0.5 bg-gray-100 rounded text-xs">Tailwind utilities</code> like 
+              <span className="text-blue-600 font-semibold"> text-blue-600</span>, 
+              <span className="bg-yellow-200 px-1 mx-1 rounded"> bg-yellow-200</span>, and
+              <span className="border-2 border-green-500 px-1 mx-1 rounded"> border-green-500</span> 
+              alongside your existing design system tokens.
+            </p>
+          </div>
         </div>
         
         <div className="dashboard-grid">
