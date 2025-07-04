@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
+import TopNav from './components/TopNav/TopNav';
+import SideNav from './components/SideNav/SideNav';
+import Prospecting from './components/Prospecting/Prospecting';
 
 function App() {
+  const [activeTab, setActiveTab] = useState('prospecting');
+
   return (
     <div className="app">
-      <h1>Test - React is working!</h1>
-      <p>If you see this, React is mounting correctly.</p>
+      <TopNav />
+      <div className="app-layout">
+        <SideNav />
+        <div className="app-main">
+          {activeTab === 'prospecting' && <Prospecting />}
+          {/* Add other tabs/components here as needed */}
+        </div>
+      </div>
     </div>
   );
 }

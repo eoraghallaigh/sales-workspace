@@ -2,9 +2,40 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #f5f5f5;
-  font-family: 'Lexend Deca', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Helvetica Neue', sans-serif;
-  padding-top: 48px; /* Make room for fixed TopNav */
+  background-color: #f5f8fa;
+}
+
+.app-layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.app-main {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #f5f8fa;
+}
+
+/* Ensure the main content area takes up the remaining space */
+.app-main > * {
+  height: 100%;
+}
+
+/* Global styles for the workspace */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .app-body {
@@ -12,14 +43,6 @@
   flex: 1;
   height: calc(100vh - 48px); /* Adjust based on TopNav height */
   position: relative;
-}
-
-.app-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  margin-left: 64px; /* Make room for fixed SideNav */
-  overflow: hidden;
 }
 
 .main-content {
