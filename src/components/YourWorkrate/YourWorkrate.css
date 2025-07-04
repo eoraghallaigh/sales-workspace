@@ -1,0 +1,320 @@
+/* YourWorkrate Component Styles */
+.your-workrate {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.workrate-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 36px; /* space/900 */
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 24px 18px; /* space/600 and custom padding */
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Header */
+.workrate-header {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.workrate-title {
+  font-family: 'Lexend Deca', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 600; /* SemiBold */
+  font-size: 20px; /* heading/300 */
+  line-height: 24px;
+  color: #33475b; /* color/text/core/default */
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+/* Statistics Section */
+.workrate-stats {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.stats-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  gap: 48px; /* space/1200 */
+}
+
+.spacer {
+  height: 10px;
+  flex-shrink: 0;
+  width: 20.02px;
+}
+
+.stat-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* space/300 */
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.stat-label {
+  font-family: 'Lexend Deca', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 600; /* SemiBold */
+  font-size: 12px;
+  line-height: normal;
+  color: #33475b; /* color/text/core/default */
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.stat-value {
+  font-family: 'Lexend Deca', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 300; /* Light */
+  font-size: 28px;
+  line-height: normal;
+  color: #33475b; /* color/text/core/default */
+  text-align: center;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.stat-target {
+  font-family: 'Lexend Deca', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 14px;
+  line-height: normal;
+  color: #33475b; /* color/text/core/default */
+  text-align: center;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+/* Workrate by Tier Section */
+.workrate-tier-section {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* space/400 */
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.tier-header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 16px; /* space/400 */
+  align-items: baseline;
+  justify-content: flex-start;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.tier-title {
+  font-family: 'Lexend Deca', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 600; /* SemiBold */
+  font-size: 14px; /* heading/50 */
+  line-height: 18px;
+  color: #33475b; /* color/text/core/default */
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.tier-dropdown {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.dropdown-button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 3px; /* borderRadius/100 */
+  min-height: 40px;
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 8px; /* space/200 */
+  align-items: center;
+  justify-content: center;
+  padding: 1px 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dropdown-button:hover {
+  background-color: rgba(0, 145, 174, 0.05);
+}
+
+.dropdown-text {
+  font-family: 'Lexend Deca', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 600; /* SemiBold */
+  font-size: 14px;
+  line-height: 18px;
+  color: #0091ae; /* color/text/interactive/default */
+  text-align: left;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-icon {
+  position: relative;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+}
+
+/* Progress Section */
+.tier-progress-section {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 32px; /* space/800 */
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.progress-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* space/200 */
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.progress-header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+  line-height: 0;
+  color: #33475b; /* color/text/core/default */
+}
+
+.progress-label {
+  font-family: 'Lexend Deca', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 300; /* Light */
+  font-size: 16px; /* body/200 */
+  line-height: 24px;
+  color: #33475b; /* color/text/core/default */
+  text-align: left;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.progress-percentage {
+  font-family: 'Lexend Deca', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 600; /* SemiBold */
+  font-size: 16px; /* heading/100 */
+  line-height: 20px;
+  color: #33475b; /* color/text/core/default */
+  text-align: right;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.progress-container {
+  background-color: #eaf0f6; /* color/fill/accent neutral/subtle alt */
+  height: 16px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px; /* borderRadius/100 */
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.progress-bar {
+  position: absolute;
+  height: 16px;
+  left: 0;
+  top: 0;
+  border-radius: 3px; /* borderRadius/100 */
+  background: linear-gradient(90deg, #00bda5 0%, #0091ae 100%);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+}
+
+.progress-text {
+  font-family: 'Lexend Deca', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 300; /* Light */
+  font-size: 12px; /* detail/100 */
+  line-height: 14px;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+  
+  .spacer {
+    display: none;
+  }
+  
+  .workrate-content {
+    padding: 16px 12px;
+    gap: 24px;
+  }
+  
+  .tier-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  
+  .tier-progress-section {
+    gap: 24px;
+  }
+} 

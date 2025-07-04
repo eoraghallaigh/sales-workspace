@@ -1,0 +1,219 @@
+/* Base table cell styles */
+.table-cell {
+  position: relative;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  min-width: 0; /* Allows text truncation in grid/flex layouts */
+  width: auto; /* Let table-cell determine width naturally */
+  max-width: 300px;
+}
+
+.table-cell__border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  pointer-events: none;
+}
+
+.table-cell__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  min-height: inherit;
+  position: relative;
+}
+
+.table-cell__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0; /* Allows text truncation in grid/flex layouts */
+  overflow: hidden; /* Ensures content doesn't overflow the container */
+}
+
+/* Title state styles */
+.table-cell--title {
+  height: 40px;
+}
+
+.table-cell__content--title {
+  padding: 16px 24px;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.table-cell__prefix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.table-cell__avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.table-cell__avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.table-cell__avatar-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: uppercase;
+  border-radius: 50%;
+}
+
+.table-cell__text-content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden; /* Ensures content doesn't overflow the container */
+}
+
+.table-cell__link {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #0091ae;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table-cell__link:hover {
+  text-decoration: underline;
+}
+
+/* Default state styles */
+.table-cell--default {
+  height: 40px;
+}
+
+.table-cell__content--default {
+  padding: 16px 24px;
+}
+
+.table-cell__text {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #33475b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+/* Header state styles */
+.table-cell--header {
+  height: 48px;
+  background-color: #eaf0f6;
+}
+
+
+
+.table-cell__content--header {
+  padding: 12px 24px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  cursor: default;
+}
+
+.table-cell__content--sortable {
+  cursor: pointer;
+}
+
+.table-cell__content--sortable:hover {
+  background-color: rgba(0, 145, 174, 0.05);
+}
+
+.table-cell__header-text {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #33475b;
+  text-transform: uppercase;
+  white-space: nowrap;
+  /* No truncation for headers - let them determine column width */
+}
+
+.table-cell__sort {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  flex-shrink: 0;
+}
+
+.table-cell__sort-arrow {
+  width: 8px;
+  height: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #99acc2;
+  transition: color 0.2s ease;
+}
+
+.table-cell__sort-arrow--active {
+  color: #33475b;
+}
+
+.table-cell__sort-arrow svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .table-cell__content--title,
+  .table-cell__content--default {
+    padding: 12px 16px;
+  }
+  
+  .table-cell__content--header {
+    padding: 8px 16px;
+  }
+  
+  .table-cell__text,
+  .table-cell__link {
+    font-size: 13px;
+  }
+  
+  .table-cell__header-text {
+    font-size: 11px;
+  }
+} 

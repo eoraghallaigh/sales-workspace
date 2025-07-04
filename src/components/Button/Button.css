@@ -1,0 +1,179 @@
+/* Button Component */
+.button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 1px 13px;
+  min-height: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-family: 'Lexend Deca', sans-serif;
+  text-decoration: none;
+  outline: none;
+}
+
+.button:hover:not(.button--disabled) {
+  background-color: rgba(0, 145, 174, 0.05);
+}
+
+.button:active:not(.button--disabled) {
+  background-color: rgba(0, 145, 174, 0.1);
+}
+
+.button:focus:not(.button--disabled) {
+  background-color: rgba(0, 145, 174, 0.05);
+  box-shadow: 0 0 0 2px rgba(0, 145, 174, 0.2);
+}
+
+.button__text {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #0091ae;
+  text-align: left;
+  white-space: pre;
+}
+
+.button__icon {
+  width: 14px;
+  height: 14px;
+  color: #0091ae;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button__icon svg {
+  width: 14px;
+  height: 14px;
+  color: inherit;
+}
+
+/* Disabled state */
+.button--disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.button--disabled .button__text {
+  color: #9ca3af;
+}
+
+.button--disabled .button__icon {
+  color: #9ca3af;
+}
+
+/* Variant: Primary */
+.button--primary {
+  border-radius: 4px;
+  border: 1px solid rgba(20, 20, 20, 0);
+  background: #ff7a59;
+  padding: 1px 25px;
+  min-height: 40px;
+}
+
+.button--primary .button__text {
+  color: #ffffff;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.button--primary .button__icon {
+  color: #ffffff;
+}
+
+.button--primary:hover:not(.button--disabled) {
+  background-color: #ff8f73;
+  border-color: rgba(20, 20, 20, 0);
+}
+
+.button--primary:active:not(.button--disabled) {
+  background-color: #e66e50;
+  border-color: rgba(20, 20, 20, 0);
+}
+
+/* Variant: Secondary */
+.button--secondary {
+  border-radius: 4px;
+  border: 1px solid #ff7a59;
+  background: #ffffff;
+  padding: 1px 25px;
+  min-height: 40px;
+}
+
+.button--secondary .button__text {
+  color: #ff7a59;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.button--secondary .button__icon {
+  color: #ff7a59;
+}
+
+.button--secondary:hover:not(.button--disabled) {
+  background-color: #fff1ee;
+  border-color: #ff7a59;
+}
+
+.button--secondary:active:not(.button--disabled) {
+  background-color: #fff1ee;
+  border-color: #ff7a59;
+}
+
+/* Variant: Danger */
+.button--danger {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.button--danger .button__text {
+  color: #dc2626;
+}
+
+.button--danger .button__icon {
+  color: #dc2626;
+}
+
+.button--danger:hover:not(.button--disabled) {
+  background-color: rgba(220, 38, 38, 0.05);
+}
+
+.button--danger:active:not(.button--disabled) {
+  background-color: rgba(220, 38, 38, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .button {
+    min-height: 36px;
+    padding: 1px 10px;
+    gap: 6px;
+  }
+  
+  .button__text {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  
+  .button__icon {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .button__icon svg {
+    width: 12px;
+    height: 12px;
+  }
+} 

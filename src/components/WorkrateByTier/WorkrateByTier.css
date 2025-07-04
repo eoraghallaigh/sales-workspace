@@ -1,0 +1,409 @@
+/* WorkrateByTier Component Styles */
+.workrate-by-tier {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.workrate-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 24px 18px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Main Title */
+.workrate-title {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #33475b;
+  text-align: left;
+  white-space: nowrap;
+  position: relative;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Statistics Section */
+.statistics-section {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.statistics-row {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.spacer {
+  height: 10px;
+  flex-shrink: 0;
+  width: 20.02px;
+}
+
+/* Data Statistic Component */
+.data-statistic {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.data-statistic-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  position: relative;
+}
+
+.data-statistic-title {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 12px;
+  line-height: normal;
+  color: #33475b;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  position: relative;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.data-statistic-stat {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  position: relative;
+}
+
+.data-statistic-value {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+  line-height: normal;
+  color: #33475b;
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.data-statistic-target {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: normal;
+  color: #33475b;
+  text-align: center;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+/* Tier Section */
+.tier-section {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.tier-controls {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.tier-header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: baseline;
+  justify-content: flex-start;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.tier-title {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #33475b;
+  text-align: left;
+  white-space: nowrap;
+  position: relative;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.tier-dropdown {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.dropdown-button {
+  background-color: rgba(0, 0, 0, 0);
+  min-height: 40px;
+  position: relative;
+  border-radius: 3px;
+  flex-shrink: 0;
+  border: 1px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 13px;
+  position: relative;
+  min-height: inherit;
+}
+
+.dropdown-text {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #0091ae;
+  text-align: left;
+  white-space: nowrap;
+  position: relative;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-icon {
+  position: relative;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Progress Chart */
+.progress-chart {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+/* Progress Item */
+.progress-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.progress-header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  color: #33475b;
+  font-size: 16px;
+  line-height: 0;
+}
+
+.progress-label {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #33475b;
+  text-align: left;
+  white-space: nowrap;
+  position: relative;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.progress-value {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #33475b;
+  text-align: right;
+  position: relative;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.progress-container {
+  background-color: #eaf0f6;
+  height: 16px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.progress-bar {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: var(--borderRadius-100, 3px);
+  background: linear-gradient(73deg, var(--color-fill-positive-default, #00BDA5) 8.26%, var(--color-fill-info-default, #00A4BD) 93.52%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-text {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1280px) {
+  .workrate-container {
+    gap: 30px;
+    padding: 20px 16px;
+  }
+  
+  .data-statistic-value {
+    font-size: 24px;
+  }
+  
+  .data-statistic-title {
+    font-size: 11px;
+  }
+  
+  .progress-chart {
+    gap: 28px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .statistics-row {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .spacer {
+    display: none;
+  }
+  
+  .workrate-container {
+    gap: 24px;
+  }
+  
+  .progress-chart {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .statistics-row {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+  
+  .spacer {
+    display: none;
+  }
+  
+  .workrate-container {
+    padding: 16px;
+    gap: 24px;
+  }
+  
+  .progress-chart {
+    gap: 24px;
+  }
+} 

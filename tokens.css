@@ -1,0 +1,429 @@
+/**
+ * Design Tokens - Exported from Figma
+ * This file contains all design system tokens for the Capacity Health Dashboard
+ */
+
+/* ==========================================================================
+   DESIGN TOKENS - HUBSPOT DESIGN SYSTEM
+   ========================================================================== */
+
+/* Root variables - default to Canvas theme */
+:root {
+  /* Theme selection */
+  --theme: 'canvas';
+  
+  /* Border Colors */
+  --border-alert-default: #F2545B;
+  --border-container-default: rgba(20, 20, 20, 0);
+  --border-interactive-default: #7FD1DE;
+  --border-interactive-pressed: #0091AE;
+  --border-caution-default: #F5C26B;
+  --border-positive-default: #00BDA5;
+  --border-brand-default: #FF7A59;
+  --border-primary-default: rgba(20, 20, 20, 0);
+  --border-primary-disabled: rgba(20, 20, 20, 0);
+  --border-info-default: #00A4BD;
+  --border-core-default: #CBD6E2;
+  --border-core-disabled: #EAF0F6;
+  --border-core-hover: #7C98B6;
+  --border-core-on-fill-default: #FFFFFF;
+  --border-core-pressed: #EAF0F6;
+  --border-core-subtle: #DFE3EB;
+  --border-core-subtle-hover: #CBD6E2;
+  --border-core-subtle-pressed: #99ACC2;
+  --border-secondary-default: #FF7A59;
+  --border-secondary-disabled: rgba(0, 0, 0, 0);
+  --border-tertiary-default: #CBD6E2;
+  --border-tertiary-disabled: rgba(0, 0, 0, 0);
+
+  /* Fill Colors */
+  --fill-caution-default: #F5C26B;
+  --fill-caution-hover: #FAE0B5;
+  --fill-caution-pressed: #DBAE60;
+  --fill-caution-subtle: #FEF8F0;
+  --fill-positive-default: #00BDA5;
+  --fill-positive-hover: #7FDED2;
+  --fill-positive-pressed: #00A38D;
+  --fill-positive-subtle: #E5F8F6;
+  --fill-brand-default: #FF7A59;
+  --fill-brand-hover: #FF8F73;
+  --fill-brand-pressed: #E66E50;
+  --fill-brand-subtle: #FFF1EE;
+  --fill-info-default: #00A4BD;
+  --fill-info-hover: #7FD1DE;
+  --fill-info-pressed: #0091AE;
+  --fill-info-subtle: #E5F5F8;
+  --fill-alert-default: #F2545B;
+  --fill-alert-hover: #FF5962;
+  --fill-alert-pressed: #D94C53;
+  --fill-alert-subtle: #FDEDEE;
+  --fill-primary-default: #FF7A59;
+  --fill-primary-disabled: #EAF0F6;
+  --fill-primary-hover: #FF8F73;
+  --fill-primary-pressed: #E66E50;
+  --fill-field-default: #F5F8FA;
+  --fill-field-default-alt: #FFFFFF;
+  --fill-field-disabled: #EAF0F6;
+  --fill-field-hover: #E5F5F8;
+  --fill-field-pressed: #EAF0F6;
+  --fill-secondary-default: #FFFFFF;
+  --fill-secondary-disabled: #EAF0F6;
+  --fill-secondary-hover: #FFF1EE;
+  --fill-secondary-pressed: #FFF1EE;
+  --fill-tertiary-default: #EAF0F6;
+  --fill-tertiary-disabled: #EAF0F6;
+  --fill-tertiary-hover: #F5F8FA;
+  --fill-tertiary-pressed: #CBD6E2;
+  --fill-surface-default: #FFFFFF;
+  --fill-surface-default-hover: #FFFFFF;
+  --fill-surface-default-pressed: #FFFFFF;
+  --fill-surface-raised: #F5F8FA;
+  --fill-surface-recessed: #F5F8FA;
+  --fill-surface-recessed-hover: #FFFFFF;
+  --fill-surface-recessed-pressed: #FFFFFF;
+
+  /* Text Colors */
+  --text-core-default: #33475B;
+  --text-core-disabled: #99ACC2;
+  --text-core-on-fill-default: #FFFFFF;
+  --text-core-subtle: #516F90;
+  --text-alert-default: #F2545B;
+  --text-alert-hover: #F8A9AD;
+  --text-alert-on-fill-default: #FFFFFF;
+  --text-alert-pressed: #D94C53;
+  --text-interactive-default: #0091AE;
+  --text-interactive-default-disabled: #99ACC2;
+  --text-interactive-default-hover: #007A8C;
+  --text-interactive-default-pressed: #7FD1DE;
+  --text-interactive-on-fill: #FFFFFF;
+  --text-interactive-on-fill-default: #FFFFFF;
+  --text-interactive-on-fill-hover: #FFFFFF;
+  --text-interactive-on-fill-pressed: #FFFFFF;
+  --text-primary-default: #FFFFFF;
+  --text-primary-disabled: #99ACC2;
+  --text-primary-subtle: #FFFFFF;
+  --text-secondary-default: #FF7A59;
+  --text-secondary-disabled: #99ACC2;
+  --text-tertiary-default: #516F90;
+  --text-tertiary-disabled: #99ACC2;
+
+  /* Icon Colors */
+  --icon-core-default: #33475B;
+  --icon-core-disabled: #99ACC2;
+  --icon-core-on-fill-default: #FFFFFF;
+  --icon-core-subtle: #7C98B6;
+  --icon-alert-default: #F2545B;
+  --icon-alert-hover: #F8A9AD;
+  --icon-alert-on-fill-default: #FFFFFF;
+  --icon-alert-pressed: #D94C53;
+  --icon-interactive-default: #0091AE;
+  --icon-interactive-disabled: #99ACC2;
+  --icon-interactive-hover: #007A8C;
+  --icon-interactive-on-fill-default: #FFFFFF;
+  --icon-interactive-on-fill-hover: #FFFFFF;
+  --icon-interactive-on-fill-pressed: #FFFFFF;
+  --icon-interactive-pressed: #7FD1DE;
+  --icon-primary-default: #FFFFFF;
+  --icon-primary-disabled: #99ACC2;
+  --icon-primary-hover: #FFFFFF;
+  --icon-primary-pressed: #FFFFFF;
+  --icon-secondary-default: #FF7A59;
+  --icon-secondary-disabled: #99ACC2;
+  --icon-tertiary-default: #516F90;
+  --icon-tertiary-disabled: #99ACC2;
+
+  /* Specialty Colors */
+  --specialty-scrim: rgba(45, 62, 80, 0.8);
+  --specialty-scrim-alt: rgba(255, 255, 255, 0.8);
+
+  /* Legacy compatibility variables */
+  --color-primary: var(--fill-primary-default);
+  --color-secondary: var(--fill-secondary-default);
+  --color-positive: var(--fill-positive-default);
+  --color-caution: var(--fill-caution-default);
+  --color-alert: var(--fill-alert-default);
+  --color-info: var(--fill-info-default);
+  --color-text-primary: var(--text-core-default);
+  --color-text-secondary: var(--text-core-subtle);
+  --color-background: var(--fill-surface-default);
+  --color-border: var(--border-core-default);
+}
+
+/* Trellis Light Theme */
+[data-theme="trellis"], 
+.theme-trellis {
+  /* Theme selection */
+  --theme: 'trellis';
+  
+  /* Border Colors */
+  --border-alert-default: #D9002B;
+  --border-container-default: #CFCCCB;
+  --border-interactive-default: #8C8787;
+  --border-interactive-pressed: #141414;
+  --border-caution-default: #956309;
+  --border-positive-default: #00823A;
+  --border-brand-default: #FF4800;
+  --border-primary-default: rgba(20, 20, 20, 0);
+  --border-primary-disabled: rgba(20, 20, 20, 0);
+  --border-info-default: #016DE1;
+  --border-core-default: #8C8787;
+  --border-core-disabled: #E7E5E4;
+  --border-core-hover: #676565;
+  --border-core-on-fill-default: #FFFFFF;
+  --border-core-pressed: #141414;
+  --border-core-subtle: #CFCCCB;
+  --border-core-subtle-hover: #B6B1AF;
+  --border-core-subtle-pressed: #8C8787;
+  --border-secondary-default: #141414;
+  --border-secondary-disabled: #E7E5E4;
+  --border-tertiary-default: #8C8787;
+  --border-tertiary-disabled: #E7E5E4;
+
+  /* Fill Colors */
+  --fill-caution-default: #956309;
+  --fill-caution-hover: #784B05;
+  --fill-caution-pressed: #5E3804;
+  --fill-caution-subtle: #FCF6E6;
+  --fill-positive-default: #00823A;
+  --fill-positive-hover: #006831;
+  --fill-positive-pressed: #005027;
+  --fill-positive-subtle: #EDF4EF;
+  --fill-brand-default: #FF4800;
+  --fill-brand-hover: #C93700;
+  --fill-brand-pressed: #9F2800;
+  --fill-brand-subtle: #FCC6B1;
+  --fill-info-default: #016DE1;
+  --fill-info-hover: #0050C7;
+  --fill-info-pressed: #0035B2;
+  --fill-info-subtle: #E1F2FB;
+  --fill-alert-default: #D9002B;
+  --fill-alert-hover: #AC0020;
+  --fill-alert-pressed: #850016;
+  --fill-alert-subtle: #FFCECE;
+  --fill-primary-default: #141414;
+  --fill-primary-disabled: #EFEDEB;
+  --fill-primary-hover: #333333;
+  --fill-primary-pressed: #4D4C4C;
+  --fill-field-default: rgba(20, 20, 20, 0);
+  --fill-field-default-alt: #FFFFFF;
+  --fill-field-disabled: #F5F3F2;
+  --fill-field-hover: rgba(20, 20, 20, 0.08);
+  --fill-field-pressed: rgba(20, 20, 20, 0.11);
+  --fill-secondary-default: rgba(20, 20, 20, 0);
+  --fill-secondary-disabled: rgba(20, 20, 20, 0);
+  --fill-secondary-hover: rgba(20, 20, 20, 0.08);
+  --fill-secondary-pressed: rgba(20, 20, 20, 0.11);
+  --fill-tertiary-default: rgba(20, 20, 20, 0);
+  --fill-tertiary-disabled: rgba(20, 20, 20, 0);
+  --fill-tertiary-hover: rgba(20, 20, 20, 0.08);
+  --fill-tertiary-pressed: rgba(20, 20, 20, 0.11);
+  --fill-surface-default: #FFFFFF;
+  --fill-surface-default-hover: rgba(20, 20, 20, 0.08);
+  --fill-surface-default-pressed: rgba(20, 20, 20, 0.11);
+  --fill-surface-raised: #FFFFFF;
+  --fill-surface-recessed: #F8F7F6;
+  --fill-surface-recessed-hover: rgba(20, 20, 20, 0.08);
+  --fill-surface-recessed-pressed: rgba(20, 20, 20, 0.11);
+
+  /* Text Colors */
+  --text-core-default: #141414;
+  --text-core-disabled: #8C8787;
+  --text-core-on-fill-default: #FFFFFF;
+  --text-core-subtle: #676565;
+  --text-alert-default: #AC0020;
+  --text-alert-hover: #850016;
+  --text-alert-on-fill-default: #FFFFFF;
+  --text-alert-pressed: #65040E;
+  --text-interactive-default: #141414;
+  --text-interactive-default-disabled: #8C8787;
+  --text-interactive-default-hover: #4D4C4C;
+  --text-interactive-default-pressed: #676565;
+  --text-interactive-on-fill: #FFFFFF;
+  --text-interactive-on-fill-default: #FFFFFF;
+  --text-interactive-on-fill-hover: #E7E5E4;
+  --text-interactive-on-fill-pressed: #B6B1AF;
+  --text-primary-default: #FFFFFF;
+  --text-primary-disabled: #8C8787;
+  --text-primary-subtle: #FFFFFF;
+  --text-secondary-default: #141414;
+  --text-secondary-disabled: #8C8787;
+  --text-tertiary-default: #141414;
+  --text-tertiary-disabled: #8C8787;
+
+  /* Icon Colors */
+  --icon-core-default: #141414;
+  --icon-core-disabled: #8C8787;
+  --icon-core-on-fill-default: #FFFFFF;
+  --icon-core-subtle: #676565;
+  --icon-alert-default: #AC0020;
+  --icon-alert-hover: #850016;
+  --icon-alert-on-fill-default: #FFFFFF;
+  --icon-alert-pressed: #65040E;
+  --icon-interactive-default: #141414;
+  --icon-interactive-disabled: #8C8787;
+  --icon-interactive-hover: #4D4C4C;
+  --icon-interactive-on-fill-default: #FFFFFF;
+  --icon-interactive-on-fill-hover: #E7E5E4;
+  --icon-interactive-on-fill-pressed: #B6B1AF;
+  --icon-interactive-pressed: #676565;
+  --icon-primary-default: #FFFFFF;
+  --icon-primary-disabled: #8C8787;
+  --icon-primary-hover: #FFFFFF;
+  --icon-primary-pressed: #FFFFFF;
+  --icon-secondary-default: #141414;
+  --icon-secondary-disabled: #8C8787;
+  --icon-tertiary-default: #141414;
+  --icon-tertiary-disabled: #8C8787;
+
+  /* Specialty Colors */
+  --specialty-scrim: rgba(20, 20, 20, 0.46);
+  --specialty-scrim-alt: rgba(255, 255, 255, 0.81);
+
+  /* Legacy compatibility variables */
+  --color-primary: var(--fill-primary-default);
+  --color-secondary: var(--fill-secondary-default);
+  --color-positive: var(--fill-positive-default);
+  --color-caution: var(--fill-caution-default);
+  --color-alert: var(--fill-alert-default);
+  --color-info: var(--fill-info-default);
+  --color-text-primary: var(--text-core-default);
+  --color-text-secondary: var(--text-core-subtle);
+  --color-background: var(--fill-surface-default);
+  --color-border: var(--border-core-default);
+}
+
+/* ==========================================================================
+   DESIGN SYSTEM FOUNDATIONAL TOKENS
+   ========================================================================== */
+
+:root {
+  /* Typography */
+  --font-family-primary: 'Lexend Deca', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+  --font-size-4xl: 2.25rem;   /* 36px */
+  
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Line Heights */
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+  
+  /* Letter Spacing */
+  --letter-spacing-tighter: -0.05em;
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+  
+  /* Spacing Scale */
+  --space-px: 1px;
+  --space-0: 0;
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+  --space-32: 8rem;     /* 128px */
+  
+  /* Border Radius */
+  --radius-none: 0;
+  --radius-sm: 0.125rem;   /* 2px */
+  --radius-base: 0.25rem;  /* 4px */
+  --radius-md: 0.375rem;   /* 6px */
+  --radius-lg: 0.5rem;     /* 8px */
+  --radius-xl: 0.75rem;    /* 12px */
+  --radius-2xl: 1rem;      /* 16px */
+  --radius-3xl: 1.5rem;    /* 24px */
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-base: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  
+  /* Z-Index Scale */
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal-backdrop: 1040;
+  --z-index-modal: 1050;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1070;
+  
+  /* Transitions */
+  --transition-all: all 150ms ease-in-out;
+  --transition-colors: color 150ms ease-in-out, background-color 150ms ease-in-out, border-color 150ms ease-in-out;
+  --transition-opacity: opacity 150ms ease-in-out;
+  --transition-shadow: box-shadow 150ms ease-in-out;
+  --transition-transform: transform 150ms ease-in-out;
+  
+  /* Breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  
+  /* Legacy border radius compatibility */
+  --borderRadius-100: var(--radius-sm);
+  --borderRadius-200: var(--radius-base);
+  --borderRadius-300: var(--radius-md);
+  --borderRadius-400: var(--radius-lg);
+  
+  /* Legacy color compatibility */
+  --color-fill-positive-default: var(--fill-positive-default);
+  --color-fill-info-default: var(--fill-info-default);
+  --color-teal: #00bfa5;
+  --color-orange: #ffab00;
+  --color-background-primary: #f5f6fa;
+}
+
+/* ==========================================================================
+   THEME SWITCHING UTILITIES
+   ========================================================================== */
+
+/* JavaScript can use these to switch themes */
+.theme-canvas {
+  /* Canvas theme is default, no overrides needed */
+}
+
+.theme-trellis {
+  /* Trellis overrides are already defined above */
+}
+
+/* Media query for system preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Could optionally default to Trellis theme for dark mode preference */
+  }
+}

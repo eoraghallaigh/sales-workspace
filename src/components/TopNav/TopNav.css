@@ -1,0 +1,355 @@
+/* TopNav Component Styles - Based on Figma Design */
+.top-nav {
+  background-color: #33475b;
+  width: 100%;
+  height: 48px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.top-nav__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 12px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Left Section - Logo and Search */
+.top-nav__left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* Logo */
+.top-nav__logo {
+  background-color: #33475b;
+  padding: 6px 8px;
+  border-radius: 6px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.top-nav__logo:hover {
+  background-color: #425b76;
+}
+
+.logo-icon {
+  width: 23.857px;
+  height: 25px;
+  flex-shrink: 0;
+}
+
+/* Search Section */
+.top-nav__search {
+  background-color: #425b76;
+  border-radius: 8px;
+  height: 32px;
+  width: 540px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.search-icon {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
+.search-text {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #dfe3eb;
+  white-space: nowrap;
+}
+
+.search-shortcut {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+  width: 36px;
+  justify-content: center;
+}
+
+.key {
+  border-radius: 3px;
+  color: #dfe3eb;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+}
+
+.key-cmd {
+  border: 0.75px solid #99acc2;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 7.5px;
+}
+
+.key-k {
+  border: 0.5625px solid #99acc2;
+  font-weight: 300;
+  padding: 5.625px;
+}
+
+/* Add Button */
+.top-nav__add-btn {
+  background: transparent;
+  border: 1px solid #516f90;
+  border-radius: 100px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.top-nav__add-btn:hover {
+  background-color: #425b76;
+  border-color: #7c98b6;
+}
+
+.add-icon {
+  width: 12px;
+  height: 12px;
+}
+
+/* Right Section - Actions and Profile */
+.top-nav__right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+/* Actions */
+.top-nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.action-btn {
+  background-color: #33475b;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.action-btn:hover {
+  background-color: #425b76;
+}
+
+.action-icon {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+}
+
+/* Divider */
+.divider {
+  background-color: #516f90;
+  height: 24px;
+  width: 1px;
+  flex-shrink: 0;
+}
+
+/* Copilot Button */
+.copilot-btn {
+  background-color: #33475b;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.copilot-btn:hover {
+  background-color: #425b76;
+}
+
+.copilot-icon {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.copilot-btn span {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fbdbe9;
+  white-space: nowrap;
+}
+
+/* User Profile */
+.top-nav__user {
+  flex-shrink: 0;
+}
+
+.user-dropdown {
+  background-color: #33475b;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.user-dropdown:hover {
+  background-color: #425b76;
+}
+
+.user-avatar {
+  width: 35px;
+  height: 37px;
+  background-color: #eee;
+  border-radius: 50%;
+  flex-shrink: 0;
+  /* This would be replaced with an actual user image */
+  background-size: cover;
+  background-position: center;
+  margin-left: 0;
+  margin-top: -7px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.user-name {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #dfe3eb;
+  white-space: nowrap;
+}
+
+.dropdown-icon {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .top-nav__search {
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-nav__content {
+    padding: 4px 8px;
+    gap: 8px;
+  }
+  
+  .top-nav__left {
+    gap: 8px;
+  }
+  
+  .top-nav__search {
+    width: 300px;
+  }
+  
+  .search-shortcut {
+    display: none;
+  }
+  
+  .top-nav__actions {
+    gap: 8px;
+  }
+  
+  .action-btn {
+    padding: 6px;
+  }
+  
+  .copilot-btn span {
+    display: none;
+  }
+  
+  .copilot-btn {
+    padding: 6px;
+  }
+  
+  .user-name {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-nav__search {
+    width: 250px;
+  }
+  
+  .top-nav__actions {
+    gap: 4px;
+  }
+  
+  .action-btn {
+    padding: 4px;
+  }
+  
+  .action-icon {
+    width: 14px;
+    height: 14px;
+  }
+} 

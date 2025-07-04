@@ -1,0 +1,64 @@
+/* Page Title Component */
+.page-title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+
+.page-title__title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.page-title__heading {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #33475b;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.page-title__count {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #516f90;
+  max-width: 600px;
+  min-width: 400px;
+  width: 400px;
+}
+
+.page-title__description {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #516f90;
+  max-width: 600px;
+  min-width: 100%;
+  width: min-content;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-title__count {
+    min-width: auto;
+    width: auto;
+  }
+  
+  .page-title__description {
+    min-width: auto;
+    width: auto;
+  }
+} 
